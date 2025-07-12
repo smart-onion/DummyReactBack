@@ -6,7 +6,7 @@ public class Order
 {
     public int Id { get; set; }
     public required ICollection<Product> Product { get; set; } = new List<Product>();
-    public int UserId { get; set; }
+    public string UserId { get; set; }
     public required User User { get; set; }
     public OrderStatus  Status { get; set; }
     public int Quantity { get; set; }

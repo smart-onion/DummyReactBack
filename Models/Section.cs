@@ -1,4 +1,6 @@
-﻿namespace DummyReactBack.Models;
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace DummyReactBack.Models;
 
 public class Section
 {

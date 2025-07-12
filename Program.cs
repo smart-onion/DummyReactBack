@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 // Add database 
-builder.Services.AddDbContext<ApplicationContext>(opt => opt.UseInMemoryDatabase("MyDb")
+builder.Services.AddDbContext<ApplicationContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<User>()

@@ -19,5 +19,6 @@ public class Product
     public ICollection<Image> Images { get; set; } =  new List<Image>();
     public ICollection<Tag> Tags { get; set; } =  new List<Tag>();
     public ICollection<Order> Orders { get; set; } = new List<Order>();
+    public ComputingDevice ComputingDevice { get; set; }
     
 }
